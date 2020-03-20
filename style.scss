@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container1 {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+nav {
+    padding: 40px;
+    grid-column: 3;
+    justify-self: end;
+
+    & a {
+        margin: 0 20px 0 0;
+        padding: 10px;
+        background-color: darkturquoise;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        border-radius: 4px;
+    }
+}
+
+.title {
+    position: relative;
+    left: 50px;
+    display: flex;
+    background-color: rgba(black, 0.4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    // grid-column: 1/3;
+    // grid-row: 2;
+    color: white;
+    align-self: center;
+    text-align: center;
+    font-size: 40px;
+    justify-content: center;
+    // padding: 30px 90px;
+
+    & h1{
+        // display: inline;
+    }
+}
+
+.img1 {
+    background-image: url(img/forest-931706_1920.jpg);
+    background-size: cover;
+}
+
+.img2 {
+    background-image: url(img/forest-438432_1920.jpg);
+    background-size: cover;
+}
+
+.img3 {
+    background-image: url(img/the-road-815297_1920.jpg);
+    background-size: cover;
+}
+
+.img4 {
+    background-image: url(img/pier-407252_1920.jpg);
+    background-size: cover;
+}
+
+ul.transition {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    pointer-events: none;
+}
+
+ul.transition li {
+    transform: scaleY(0);
+    background: white;
+    width: 20%;
+}
+
+.go {
+    position: absolute;
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    transform: scaleY(0);
+    pointer-events: none;
+    opacity: 0;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.go div {
+
+    & ul {
+        list-style: none;
+        display: flex;
+        color: #216353;
+
+        & li {
+
+            font-size: 50px;
+            margin: 10px;
+
+        }
+    }
+
+
+}
